@@ -12,6 +12,7 @@ tę sekcję:
   #define CORE_INT1_PIN		11
 
   Biblioteka enkoder pochodzi ze strony:
+  https://github.com/PaulStoffregen/Encoder
   
 http://www.pjrc.com/teensy/td_libs_Encoder.html
 
