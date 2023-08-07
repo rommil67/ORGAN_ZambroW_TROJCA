@@ -4,7 +4,7 @@
 
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
-#include <Encoder.h>
+#include <Encoder.h> //https://github.com/PaulStoffregen/Encoder
 #include <MIDI.h>   // Add Midi Library
 #include <SPI.h>
 #include <SD.h>
