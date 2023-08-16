@@ -1,12 +1,13 @@
 # ORGAN_ZambroW_TROJCA
 ORGAN_ZambroW_TROJCA
 Setzer działa na procesorze Atmega644p. 
-Sterowany jest komunikatami midi -NoteOn and -NoteOff
-Wspłpracuje z urządzeniami registrami i płytkami zakupionymi w sklepie Paush-e.de
+Sterowany jest komunikatami midi -NoteOn and -NoteOff.
+Wspłpracuje z urządzeniami registrami i płytkami zakupionymi w sklepie Paush-e.de.
 Aktualny kod obsługuje 40 registrów, i 256x8 (256 banków po 8 kombinnacji) zapisanych na karcie mikroSD.
 
-NoteOn w zakresie od 36 (C) do 75 (es2), w ł aczaja i wyłańczają podświetlenie registrów jak i poprzez dekoder włącza elektromagnesy registrowe
-komunikaty midi on dalsze - sterują setzerem:
+NoteOn w zakresie od 36 (C) do 75 (es2), w ł aczaja i wyłańczają podświetlenie registrów jak i poprzez dekoder włącza elektromagnesy registrowe.
+
+Dalsze komunikaty midiOn  - sterują setzerem:
 noteOn 76 do 83 - odpowiednio kombinacja 1 do 8
 noteOn 84 (c3) - kasownik czyli zero
 noteOn 85 (cis3) -  next czyli >
@@ -25,6 +26,7 @@ Po zaprogramowaniu wszystkich 20 stopni crescendo nacisnąć Anuluj Crescendo (A
 Aby projekt mógł działać (testowane) ma Atmega32A dodałem w Bibliotece enkoder w pliku interupt_pins.h
 w folderze C:\Users\Dell\Documents\Arduino\libraries\Encoder\utility
 tę sekcję:
+
 
 // MightyCore (untested)
 #elif defined(__AVR_ATmega64__) || defined(__AVR_ATmega32__)
