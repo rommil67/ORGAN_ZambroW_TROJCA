@@ -23,6 +23,11 @@ Natępnie zmienić pokrętłem enkodera Bank nr 2 i ustawić registry dla stopni
 Postępować tak kolejno dla 20 stopni, stopień dwudziesty powinien mieć włączonych najwięcej registrów (prawie wszystkie).
 Po zaprogramowaniu wszystkich 20 stopni crescendo nacisnąć Anuluj Crescendo (A) - ustawienie organów wróci do ostatnio używanej kombinacji.  
 
+Przyciski next (>) oraz prev (<) służą do zmiany kombinacji na kolejną do przodu i do tyłu. Next diała tak, że po 8 kombinacji następuje pierwsza kombinacja następnego banku. podobnie prev ale w odwrotnym kierunku.
+Nacisniecie SET i jednego z powyżej opisanych przycisków zmienia Bank na kolejny, pozostawiając ten sam nr kombinacji.
+kręcenie enkoderem umożliwia szybką zmianę banku na dalsze pozycje, lecz nowa kombinacja włączy się dopiero po nacisniećiu przycisko kombinacji 1 do 8.
+Naciśniecie przycisku SET i jednego z ośmiu  przycxisków kombinacji powoduje zapisanie aktualnego ustawienia registrów do danej kombinacji w aktoalnioe wyświetlonym banku. 
+
 Aby projekt mógł działać (testowane) ma Atmega32A dodałem w Bibliotece enkoder w pliku interupt_pins.h
 w folderze C:\Users\Dell\Documents\Arduino\libraries\Encoder\utility
 tę sekcję:
