@@ -1,4 +1,4 @@
-The setzer runs on the Atmega644p processor.
+The setzer runs on the Atmega644p processor  .
 It is controlled by midi messages -NoteOn and -NoteOff.
 Works with register devices and plates purchased in the Paush-e.de store.
 The current code supports 40 registers, and 256x8 (256 banks of 8 combinations) stored on the microSD card.
