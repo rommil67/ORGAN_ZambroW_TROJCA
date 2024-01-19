@@ -1,5 +1,4 @@
 //Author Romuald Milewski
-//Author Romuald Milewski
 // Dekoder for Man.I for pipe organ
 // Arduino Mega and Mega2560
 #include <MIDI.h>   // Add Midi Library
