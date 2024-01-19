@@ -1,6 +1,5 @@
 //Author Romuald Milewski
-//Author Romuald Milewski
-// Dekoder for Man.II 
+// Dekoder for Man.II for pipe organ Zambrow, sw. Trojca
 // Arduino Mega and Mega2560
 #include <MIDI.h>   // Add Midi Library
  
