@@ -1,4 +1,7 @@
 //Author Romuald Milewski
+//Author Romuald Milewski
+// Dekoder for Man.II 
+// Arduino Mega and Mega2560
 #include <MIDI.h>   // Add Midi Library
  
 //#define LED 13 
