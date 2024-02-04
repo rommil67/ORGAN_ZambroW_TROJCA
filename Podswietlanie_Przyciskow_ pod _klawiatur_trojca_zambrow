@@ -125,7 +125,65 @@ void MyHandleNoteOn(byte channel, byte pitch, byte velocity) {
        }
    }      
  }
-} 
+
+// obsługa Next (>)
+   
+   if (pitch == 85){ 
+
+       pitch_store++;
+       if (pitch_store > 83){
+        pitch_store = 76;
+       }
+     
+       // gaszenie wszystkich lampek podświetlenia
+       for (int i = 0; i < sizeof(pins) / sizeof(pins[0]); ++i){ 
+          digitalWrite (pins[i], HIGH); 
+       }
+       
+       // zapalenie na powrót włąsciwej lampki podświetlającej pistony  od 1 do 8 lub (0)
+       if (pitch_store >= 76 && pitch_store <= 83){
+         for (int i = 0; i < sizeof(pins) / sizeof(pins[0]); ++i) {
+            if (pitch_store == 76+i) {
+              digitalWrite (pins[i+1], LOW); // włącza wlasciwą lampkę (1 do 8)
+            } 
+         }
+       }
+       
+       if (pitch_store == 84){
+           digitalWrite (pins[0], LOW); // włącza wlasciwą lampkę (0)
+       }
+   }  
+
+// obsługa Prew (<) (-)
+   
+   if (pitch == 86){ 
+
+       pitch_store--;
+       if (pitch_store < 76){
+        pitch_store = 83;
+       }
+     
+       // gaszenie wszystkich lampek podświetlenia
+       for (int i = 0; i < sizeof(pins) / sizeof(pins[0]); ++i){ 
+          digitalWrite (pins[i], HIGH); 
+       }
+       
+       // zapalenie na powrót włąsciwej lampki podświetlającej pistony  od 1 do 8 lub (0)
+       if (pitch_store >= 76 && pitch_store <= 83){
+         for (int i = 0; i < sizeof(pins) / sizeof(pins[0]); ++i) {
+            if (pitch_store == 76+i) {
+              digitalWrite (pins[i+1], LOW); // włącza wlasciwą lampkę (1 do 8)
+            } 
+         }
+       }
+       
+       if (pitch_store == 84){
+           digitalWrite (pins[0], LOW); // włącza wlasciwą lampkę (0)
+       }
+   } 
+       
+ } 
+ 
 
 // MyHandleNoteOFF is the function that will be called by the Midi Library
 // when a MIDI NOTE OFF message is received.
